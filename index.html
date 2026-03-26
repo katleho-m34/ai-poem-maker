@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Poem Generator</title>
+    <link rel="stylesheet" href="styles.css">
  </head>
 
  <body>
-
+   <div class="container">
     <header>
-      <h1>AI Poem Generator!</h1>
+      <h1>AI Poem Generator🤖</h1>
    </header>
 
    <main>
       <form> 
-         <input type="text" placeholder="Enter the topic of the poem..." required>
-         <input type="submit">
+         <input type="text" placeholder="Enter the topic of the poem..." required class="instructions">
+         <input type="submit" class="button">
       </form>
 
-      <div>
+      <div class="poem">
          The poem will go here... <br>
          Example poem:
       </div>
@@ -36,5 +37,6 @@
       
       <a href="https://myaijokemaker.netlify.app/" target="_blank">Netlify</a>
    </footer>
+   </div>
  </body>
  </html>
