@@ -25,17 +25,27 @@ header {
     margin-bottom: 30px;
 }
 
-form {
-    padding: 30px;
+.form-container {
+    padding: 15px 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    display: flex;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-    margin-bottom: 30px;
+    margin-bottom: 20px 30px;
+}
+
+form {
+    display: flex;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 .instructions {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid rgb(0, 0, 0);
     width: 80%;
     font-size: 16px;
@@ -71,11 +81,24 @@ form {
 }
 
 .poem strong {
-    color: rgb(56, 191, 56);
+    color: green;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
     text-align: center;
     font-size: 15px;
     margin-top: 30px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.generating {
+  animation: blink 1s step-start 0s infinite;
 }
