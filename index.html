@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
  </head>
 
  <body>
@@ -14,14 +15,12 @@
    </header>
 
    <main>
-      <form> 
+      <form id="poem-generator"> 
          <input type="text" placeholder="Enter the topic of the poem..." required class="instructions">
          <input type="submit" class="button">
       </form>
 
-      <div class="poem">
-         The poem will go here... <br>
-         Example poem:
+      <div class="poem" id="poem">
       </div>
    </main>
 
@@ -38,5 +37,7 @@
       <a href="https://myaijokemaker.netlify.app/" target="_blank">Netlify</a>
    </footer>
    </div>
+
+   <script src="script.js"></script>
  </body>
  </html>
